@@ -38,4 +38,17 @@ function tiraPalavrasRuin(palavras) {
     }
 
     return palavrasBoas;
+>>>>>>> f30272b0ddf1f3c6410a7bcd313f4b3cd6fc2e65
+}
+
+function tiraPalavrasRuin(palavras) {
+    const PALAVRAS_RUINS = new Set(["para", "uma", "nós"]);
+    const palavrasBoas = [];
+    for (let palavra of palavras) {
+        if (!PALAVRAS_RUINS.has(palavra) && palavra.lenght > 2) {
+            palavrasBoas.push(palavra);
+        }
+    }
+
+    return palavrasBoas;
 }
