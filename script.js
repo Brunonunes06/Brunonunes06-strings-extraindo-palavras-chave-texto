@@ -42,7 +42,12 @@ function tiraPalavrasRuin(palavras) {
 }
 
 function tiraPalavrasRuin(palavras) {
-    const PALAVRAS_RUINS = new Set(["para", "uma", "nós", "elas"]);
+    const PALAVRAS_RUINS = new Set([
+        "para", 
+        "uma",
+        "nós",
+        "elas",
+    ]);
     const palavrasBoas = [];
     for (let palavra of palavras) {
         if (!PALAVRAS_RUINS.has(palavra) && palavra.lenght > 2) {
